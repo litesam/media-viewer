@@ -1,0 +1,288 @@
+:root {
+    --bg-color: #111827; /* Dark Blue/Gray */
+    --surface-color: #1F2937; /* Lighter Gray */
+    --primary-color: #3B82F6; /* Blue */
+    --text-color: #D1D5DB; /* Light Gray */
+    --text-color-dark: #9CA3AF; /* Medium Gray */
+    --text-color-headings: #F9FAFB; /* Off-white */
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+.navbar {
+    background-color: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--surface-color);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--text-color-headings);
+    margin: 0;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2563EB;
+}
+
+/* --- Main Content --- */
+main {
+    padding-top: 40px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: var(--text-color-headings);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero .subtitle {
+    font-size: 1.25rem;
+    color: var(--text-color-dark);
+    max-width: 700px;
+    margin: 20px auto 40px;
+}
+
+.hero-image {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image svg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* --- Features Section --- */
+.features {
+    background-color: var(--surface-color);
+}
+.features h2, .how-to h2, .faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text-color-headings);
+    margin-bottom: 60px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #374151;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-color-headings);
+    margin-bottom: 10px;
+}
+
+/* --- How-to Section --- */
+.how-to p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: var(--text-color-dark);
+}
+
+.instruction-box {
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border: 1px solid #374151;
+}
+
+.instruction {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.code-block {
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.code-block code {
+    color: #A5B4FC;
+    word-break: break-all;
+}
+
+.instruction-visual {
+    flex-shrink: 0;
+}
+
+/* --- FAQ Section --- */
+.faq-section {
+     background-color: var(--surface-color);
+}
+.faq-item {
+    background: var(--bg-color);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    overflow: hidden;
+}
+.faq-question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    color: var(--text-color-headings);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.faq-answer p {
+    padding: 0 20px 20px;
+    margin: 0;
+    color: var(--text-color-dark);
+}
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust as needed */
+    padding-bottom: 20px;
+}
+.faq-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--surface-color);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color-dark);
+}
+
+.footer-links a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .instruction-box {
+        flex-direction: column;
+    }
+}

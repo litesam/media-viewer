@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media Viewer - The ultimate browser extension for viewing your local image galleries, including HEIC files, for free.">
+    <title>Media Viewer - Your Images, Reimagined</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <!-- Mockup SVG Logo -->
+                <img src="assets/images/icon_32.png" alt="Icon">
+                <h1>Media Viewer</h1>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#how-to">How to Use</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="https://chrome.google.com/webstore" target="_blank" class="cta-button">Add to Chrome - It's Free</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Your Local Image Galleries, Beautifully Displayed in Your Browser.</h2>
+                <p class="subtitle">View your local image folders, including special formats like HEIC on Windows, directly in a clean, fast thumbnail and carousel view. For free.</p>
+                <div class="hero-image">
+                    <!-- Mockup SVG for Hero Image -->
+                    <svg width="600" height="350" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="600" height="350" rx="15" fill="#1F2937"/>
+                        <rect x="20" y="20" width="560" height="40" rx="8" fill="#374151"/>
+                        <circle cx="45" cy="40" r="7" fill="#F87171"/>
+                        <circle cx="70" cy="40" r="7" fill="#FBBF24"/>
+                        <circle cx="95" cy="40" r="7" fill="#34D399"/>
+                        <rect x="40" y="80" width="120" height="90" rx="8" fill="#4B5563"/>
+                        <rect x="180" y="80" width="120" height="90" rx="8" fill="#4B5563"/>
+                        <rect x="320" y="80" width="120" height="90" rx="8" fill="#3B82F6"/>
+                        <rect x="460" y="80" width="120" height="90" rx="8" fill="#4B5563"/>
+                        <rect x="40" y="190" width="120" height="90" rx="8" fill="#4B5563"/>
+                        <rect x="180" y="190" width="120" height="90" rx="8" fill="#4B5563"/>
+                        <rect x="320" y="190" width="120" height="90" rx="8" fill="#4B5563"/>
+                        <rect x="460" y="190" width="120" height="90" rx="8" fill="#4B5563"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Unlock the Power of Your Browser</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <!-- Mockup SVG Icon -->
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h7V2H4c-1.1 0-2 .9-2 2v7h2V4zm6 9l-4 5h12l-3-4-2.03 2.71L10 13zm7-4.5c0-.83-.67-1.5-1.5-1.5S14 7.67 14 8.5s.67 1.5 1.5 1.5S17 9.33 17 8.5zM20 2h-7v2h7v7h2V4c0-1.1-.9-2-2-2zm0 18h-7v2h7c1.1 0 2-.9 2-2v-7h-2v7zM4 13H2v7c0 1.1.9 2 2 2h7v-2H4v-7z"/></svg>
+                        <h3>Thumbnail Gallery View</h3>
+                        <p>Automatically transforms a local folder of images into a beautiful thumbnail grid. No more opening files one by one.</p>
+                    </div>
+                    <div class="feature-card">
+                         <!-- Mockup SVG Icon -->
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16V4c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L16 11l4 5H4l7-9z"/></svg>
+                        <h3>Seamless Carousel Mode</h3>
+                        <p>Click on any thumbnail to enter a distraction-free carousel mode. Effortlessly navigate through your photos with keyboard arrows.</p>
+                    </div>
+                    <div class="feature-card">
+                         <!-- Mockup SVG Icon -->
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8 12H9.5v-2H11v2zm0-3H9.5v-2H11v2zm0-3H9.5V7H11v2zm4.5 6H14v-2h1.5v2zm0-3H14v-2h1.5v2zm0-3H14V7h1.5v2z"/><text x="6" y="16" font-family="monospace" font-size="6px" fill="#1F2937">HEIC</text></svg>
+                        <h3>Free HEIC Support on Windows</h3>
+                        <p>Windows charges you to view HEIC/HEIF files. Our extension decodes and displays them in your browser for free, saving you money and hassle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to" class="how-to">
+            <div class="container">
+                <h2>Simple Steps to View Your Gallery</h2>
+                <p>Accessing your local folders is easy. Just tell your browser where to look.</p>
+                <div class="instruction-box">
+                    <div class="instruction">
+                        <strong>To view your images:</strong><br>
+                        1. Open a new tab.<br>
+                        2. type <code>file:///</code> followed by the full path to your folder. For example:
+                        <div class="code-block">
+                          <code>file:///C:/Users/YourName/Pictures/Vacation2025</code>
+                        </div>
+                        3. Or drag and drop the folder into the browser address bar.
+                    </div>
+                    <div class="instruction-visual">
+                         <!-- Mockup SVG for How-to -->
+                        <svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" rx="10" fill="#111827"/>
+                            <rect x="10" y="10" width="280" height="30" rx="5" fill="#374151"/>
+                            <path d="M20 55L80 55" stroke="#4B5563" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M20 70L120 70" stroke="#4B5563" stroke-width="8" stroke-linecap="round"/>
+                            <foreignObject x="25" y="100" width="250" height="80">
+                                <body xmlns="http://www.w3.org/1999/xhtml">
+                                    <p style="color: #9CA3AF; font-family: monospace; font-size: 14px;">
+                                        > Open new tab<br/>
+                                        > Drag & Drop folder<br/>
+                                        > <span style="color: #60A5FA;">SUCCESS:</span> Gallery loaded.
+                                    </p>
+                                </body>
+                            </foreignObject>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my privacy protected? Are my images uploaded anywhere?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Absolutely.</strong> Media Viewer operates entirely within your browser. Your images are never uploaded to any server. They are read directly from your local disk and displayed on the page. We have no access to your files.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What image formats are supported?</span>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We support all standard web formats like <strong>PNG, JPG, GIF, BMP, and WebP</strong>. Our key feature is the built-in support for <strong>HEIC/HEIF</strong>, allowing you to view photos from modern smartphones without any extra software or cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Why do I need to use the `file:///` protocol?</span>
+                         <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For security reasons, browsers restrict websites from accessing your local file system. The `file:///` protocol is the standard, secure way to tell your browser to open and display a local file or directory. Our extension then enhances the view of that directory.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Media Viewer. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://chrome.google.com/webstore" target="_blank">Rate on Chrome Store</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
